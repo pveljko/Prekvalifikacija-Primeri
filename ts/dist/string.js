@@ -1,0 +1,10 @@
+var a = 'Once upon a midnight dreary';
+var b = "while I pondered, weak and weary";
+var c = a + ", " + b + " \u2014 ukupno " + (a.length + b.length + 2) + " simbola.";
+console.log(c);
+var r = c.match("ukupno (\\d+) simbola")[1];
+console.log(r);
+var rr = Number(r);
+console.log(rr);
+var verse = c.split("—")[0];
+console.log(verse);
