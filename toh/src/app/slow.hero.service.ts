@@ -5,7 +5,8 @@ import { HeroService } from './hero.service';
 
 
 @Injectable()
-export class SlowHeroService implements HeroService{
+export class SlowHeroService
+{
   getHeroes() : Promise<Hero[]> {
     return new Promise(resolve => {
       setTimeout(() => resolve(HEROES), 4000);
